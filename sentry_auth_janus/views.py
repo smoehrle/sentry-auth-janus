@@ -6,7 +6,6 @@ from .constants import BASE_DOMAIN
 
 class FetchUser(AuthView):
     def __init__(self, client_id, client_secret, *args, **kwargs):
-        print("fetiching user!")
         self.client = JANUSSignonClient(client_secret, BASE_DOMAIN)
         super(FetchUser, self).__init__(*args, **kwargs)
 
@@ -22,7 +21,7 @@ class FetchUser(AuthView):
 
 class ValidatePermissions(AuthView):
     def handle(self, request, helper):
-        user = helper.fetch_state('username')
+        user = helper.fetch_state('user_data')
 
         #ToDo: enable permission checking
 
