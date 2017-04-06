@@ -2,12 +2,12 @@ JANUS authentication for Sentry
 =======================================
 
 A single sign-on provider to let you authenticate Sentry with
-Janus https://github.com/fachschaft/janus/
+Janus https://github.com/smartlgt/janus/
 
 Install
 -------
 
-    $ pip install https://github.com/fachschaft/sentry-auth-janus/archive/master.zip
+    $ pip install https://github.com/smartlgt/sentry-auth-janus/archive/master.zip
 
 
 Setup
