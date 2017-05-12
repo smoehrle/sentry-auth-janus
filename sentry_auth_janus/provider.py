@@ -31,6 +31,9 @@ class JANUSOAuth2Provider(OAuth2Provider):
             ValidatePermissions(),
         ]
 
+    def get_refresh_token_url(self):
+        return self.access_token_url
+    
     def build_config(self, state):
         return {}
 
