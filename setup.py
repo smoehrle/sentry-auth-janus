@@ -7,7 +7,7 @@ sentry-auth-janus
 from setuptools import find_packages, setup
 
 install_requires = [
-    'sentry>=7.0.0,<9',
+    'sentry>=7.0.0',
 ]
 
 setup(
