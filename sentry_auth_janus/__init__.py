@@ -1,5 +1,1 @@
-from sentry.auth import register
-
-from .provider import JANUSOAuth2Provider
-
-register('janus', JANUSOAuth2Provider)
+default_app_config = "sentry_auth_janus.apps.Config"
