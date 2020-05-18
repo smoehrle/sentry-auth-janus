@@ -5,6 +5,7 @@ from django.apps import AppConfig
 
 class Config(AppConfig):
     name = "sentry_auth_janus"
+    label = 'custom_auth_janus' 
 
     def ready(self):
         from sentry.auth import register
